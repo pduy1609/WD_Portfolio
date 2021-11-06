@@ -1,0 +1,489 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+@font-face{
+	font-family: font3;
+	src: url("../Fonts/SVN-Gallery Modern.otf");
+	}
+@font-face{
+	font-family: font1;
+	src: url("../Fonts/Montserrat-Bold.ttf");
+	}
+@font-face{
+	font-family: font2;
+	src: url("../Fonts/Montserrat-Regular.ttf");
+}
+/*-------------------------------------------------------------------*/
+/*section1*/
+#banner{
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.noidungbanner h1{
+	font-size: 120px;
+	color:191915;
+	font-family: font3;
+	position: absolute;
+	top:120px;left:50px;
+	white-space: pre;
+	line-height: 80px;
+}
+.noidungbanner span{
+	color:#5E2813;
+	letter-spacing: 2px;
+}
+.noidungbanner i{
+	color:black;
+	padding:0px 10px;
+}
+.noidungbanner{
+	position: relative;
+	
+}
+.noidungbanner img{
+	width:30%;
+	padding-left:35%;padding-top: 8%		
+}
+.noidungbanner .chu{
+	width:40%;
+	position: absolute;
+	top: -15px;left:46%;
+}
+
+
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+.noidungbanner p{animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both}
+
+@keyframes roll-in-left{0%{transform:translateX(-800px) rotate(-540deg);opacity:0}100%{transform:translateX(0) rotate(0deg);opacity:1}}
+.noidungbanner .chu img{animation:roll-in-left 2s ease-out both}
+.noidungbanner h3{
+	font-size: 20px;color:black;;
+	font-family: font3;
+	position: absolute;
+	top:65px;left:55px;
+	white-space: pre;
+	line-height: 80px;
+	letter-spacing: 1px;
+}
+.noidungbanner p{
+	font-size: 15px;
+	color:black;
+	font-family: font2;
+	position: absolute;
+	top:66.5%;right:80px;
+	white-space: pre;
+	line-height: 20px;
+	letter-spacing: -1px;
+}
+.icon{
+	font-size: 20px;
+	position: absolute;
+	top:38%;left:250px;	
+}
+.buttdown{
+	padding: 2% 48%;
+	font-size:20px;
+}
+.buttdown h3{
+	top:83%;
+	left:44.5%;
+}
+.buttdown i{
+	color:#5E2813;
+}
+/*-------------------------------------------------------------------*/
+@keyframes heartbeat{from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out}}
+.buttdown i{animation:heartbeat 1.5s ease-in-out infinite both}
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+.noidungbanner h1{animation:tracking-in-expand 3s cubic-bezier(.215,.61,.355,1.000) both}
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+.noidungbanner .icon{animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both}
+/*-------------------------------------------------------------------*/
+/*navbar*/
+nav h1{
+	font-family: font3;
+	color:grey;
+	font-size: 30px;
+	width:50%;
+	float:left;
+}
+nav{
+	padding:5px 50px;
+	width:100%;
+	z-index: 10;
+	position: fixed;
+	background-color:#000000ed;
+	display:none;
+}
+nav ul{
+	float:right;
+	width:30%;
+	padding-top:10px;
+	padding-left:0px
+}
+nav ul li{
+	color:grey;
+	list-style: none;
+	display: inline;
+	font-family:font2;
+	padding: 0px 10px;
+}
+.clearfix{
+	clear: both;
+}
+nav a:link{
+	text-decoration: none;
+}
+nav a:visited{
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*section2:about*/
+#about{
+	display:grid;
+	grid-template-columns: 50% 50%;
+	padding: 10px 50px;
+	grid-column-gap: 30px;
+	height: 350px;
+}
+#about img{
+	width:60%;
+}
+#about h2{
+	font-family: font3;
+	font-size:50px;
+}
+#about p{
+	font-family: font2;
+}
+#about .doanvan{
+	padding-left: 230px;
+	padding-top:10%;
+	text-align: right;
+	
+}
+#about .doanvan .pattern{
+	background-color:#5E2813;
+	border-radius:50%;
+	width:100px;
+	height: 100px;
+	opacity: 0.5;
+	margin:-13% 185%;
+}
+/*-------------------------------------------------------------------*/
+
+@keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}
+.buttdown h3{animation:blink-1 5s infinite both}
+.doanvan h2{animation:blink-1 5s infinite both}
+.doanvan1 h1{animation:blink-1 5s infinite both}
+#feedback h1{animation:blink-1 5s infinite both}
+#contact h1{animation:blink-1 5s infinite both}
+#works h1{animation:blink-1 5s infinite both}
+/*-------------------------------------------------------------------*/
+/*section3:favourites*/
+#favourites{
+	display:grid;
+	grid-template-columns: 50% 50%;
+	padding: 0 50px;
+	height: 470px;
+	grid-column-gap: 10px;
+
+}
+.hinhminhhoa{
+	display:grid;
+	grid-template-columns: 35% 35%;
+	grid-template-rows: 220px 220px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	justify-content: flex-start;
+}
+.hinhminhhoa .hinh1{
+	background-image: url("../Image/2.jpg");
+	background-size: cover;
+}.hinhminhhoa .hinh2{
+	background-image: url("../Image/IMG_1029.jpeg");
+	background-size: cover;
+}
+#favourites .pattern1{
+	background-color:#5E2813;
+	border-radius:50%;
+	width:100px;
+	height: 100px;
+	opacity: 0.5;
+	margin:-10% -10%;
+}
+.doanvan1{
+	grid-column-start: 1;
+	grid-column-end:3;
+	padding: 40px 0;
+}
+.doanvan1 p{
+	font-family: font2;
+}
+.doanvan1 h1{
+	font-family:font3;
+	font-size:50px;
+}
+.rightside{
+	background-image: url("../Image/175837222_447071586361961_8132880059817414428_n.jpg");
+	background-size: cover;
+	width:75%;height: 90%;
+	margin-left: 175px;
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*section4:skills*/
+#skill{
+	display:grid;
+	grid-template-columns: auto auto auto ;
+	padding:30px 300px;
+	text-align: center;
+	margin:0 auto;
+	grid-column-gap: 30px;
+	
+}
+#skill h3{
+	font-family:font3;color:black;
+}
+#skill p{
+	font-family: font2;color:black;
+}
+#skill i{
+	color:#5E2813;
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*section5:works*/
+#works .grid{
+	display:grid;
+	grid-template-columns: 25.5% 25.5% 25.5%;
+	grid-template-rows: 315px 315px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	padding: 20px 10px 20px 0px;
+	justify-content: left;
+}
+.grid .tooltiptext{
+	width:100%;
+	height:100%;
+	visibility: hidden;
+}
+.grid :hover .tooltiptext{
+	visibility: visible;
+}
+#works .sp1{
+	background-image: url("../Image/Artboard 11.jpg");
+	background-size:cover;
+}
+#works .sp2{
+	background-image: url("../Image/09.jpg");
+	background-size:cover;
+}
+#works .sp3{
+	background-image: url("../Image/ca.jpg");
+	background-size:cover;
+}
+#works .sp4{
+	background-image: url("../Image/boy.jpg");
+	background-size:cover;
+}#works .sp5{
+	background-image: url("../Image/bo.jpg");
+	background-size:cover;
+	
+}
+#works .sp6{
+	background-image: url("../Image/goooo.jpg");
+	background-size:cover;
+}
+
+body{
+	background-color:#3F4037;
+
+}
+/*
+#3F4037
+#5E2813
+*/
+#works button{
+	background: transparent;
+	border-radius: 30px;
+	border: 1px solid black;
+	padding: 10px 20px;
+	margin: 0px 0px 20px 0px;
+	font-family: font3;
+	font-size:30px
+}
+#works button:hover{
+	color:black;
+	background-color:#5E2813;
+	box-shadow: 1px 1px 24px 2px black;
+}
+#works .btn{text-align: center;}
+#works h1{
+	font-family:font3;
+	font-size:50px;
+	writing-mode:vertical-lr;
+}
+#works .ndworks{
+	display:grid;
+	grid-template-columns: 19% 81%;
+}
+#works h1{
+	padding-top:18px;
+	padding-left:200px
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*section6:feedback*/
+#feedback{
+	padding: 50px 50px 0px 50px;
+	height: 300px;
+	position: relative;
+		
+}
+#feedback h1{
+	font-family: font3;
+	font-size:50px;
+	text-align: center;
+}
+#feedback .ndfeed{
+	display:grid;
+	grid-template-columns: 50% 30%;
+	justify-content: center;
+	padding: 30px
+}
+#feedback img{
+	width:20%;
+	padding: 0px 150px 0px 150px;
+}
+#feedback .trai {
+	padding:0px 0px 0px 90px;;
+	font-family: font2;
+	text-align: right;
+	justify-content: flex-end;
+}
+#feedback .trai p:before{
+	content:"\f10d";
+	font-family: 'FontAwesome';
+	font-size:100px;
+	position: absolute;
+	top: 40px;left:21%;
+	color:#5E2813;
+	opacity: 0.5
+}
+#feedback .pattern2{
+	background-color:#5E2813;
+	border-radius:50%;
+	width:150px;
+	height: 150px;
+	opacity: 0.5;
+	margin:-19% 117%;
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*section7:contact*/
+#contact{
+	text-align:center;
+	background-image:url("../Image/31.jpg");
+	background-size:cover;
+	padding:10px;
+}
+#contact h1{
+	font-family: font3;
+	font-size:50px;
+	color:grey;
+}
+#contact p{
+	font-family: font2;
+	padding: 20px 0px;
+	color:grey;
+}
+#contact form{
+	display: flex;
+	justify-content: center;
+	
+}
+#contact table{
+	width: 40%;
+	
+	
+}
+#contact input{
+	width: 98%;
+	border: none;
+	border-bottom: 1px solid grey;
+	font-family: font2;
+	height: 50px;
+	background-color: transparent;
+	color:#5E2813;	
+}
+#contact textarea{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid grey;font-family: font2;height: 50px;
+	background-color: transparent;
+	color:#5E2813;
+}
+#contact button{
+	background: transparent;
+	border-radius: 30px;
+	border: 1px solid grey;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 0px;
+	font-family: font3;
+	font-size:20px;
+	color:grey;
+
+	
+}
+#contact button:hover{
+	color:grey;
+	background-color:#5E2813;
+	box-shadow: 1px 1px 24px 2px black;
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*footer*/
+footer i{
+	font-size: 20px;
+	padding: 5px 10px;
+	color:black;
+}
+footer p{
+	font-family: font1;
+	color:black;
+	font-size: 10px;
+
+}
+footer{
+
+	text-align: center;
+	padding: 50px
+}
+/*-------------------------------------------------------------------*/
+/*linhtinh*/
+#mybt i{
+	color:#5E2813;
+	border:none;
+}
+#mybt{
+	border:none;
+	border-radius: 15px;
+	font-size: 30px;
+	padding: 10px;
+	position: fixed;
+	right:50px;
+	bottom:50px;
+	z-index: 99999999;
+	display:none;
+}
+html{
+	scroll-behavior: smooth;
+}
+/*-------------------------------------------------------------------*/

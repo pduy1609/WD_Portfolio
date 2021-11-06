@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PAGE_PRODUCTS</title>
+	<link rel="stylesheet" href="css/products_site.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<nav id="navbar">
+			<a href="../BAI_CUOI_MON/index.html"><h1>Portfolio</h1></a>
+			<ul>
+				<a href="index.html"><li>HOME</li></a>
+				<a href="#about"><li>ABOUT</li></a>
+				<a href="products.html"><li>PRODUCTS</li></a>
+				<a href="#contact"><li>CONTACT</li></a>
+			</ul>
+			<div style="clear: both"></div>
+		</nav>
+		<section id="myworks">
+			<h1>My works</h1>
+			<div class="tabview">
+				<button class="tablinks" onclick="openp(event, 'All')">All</button>
+				<button class="tablinks" onclick="openp(event, 'Photography')">Photography</button>
+				<button class="tablinks" onclick="openp(event, 'Illustration')">Illustration</button>
+				<button class="tablinks" onclick="openp(event, 'Photoshop')">Photoshop</button>
+			</div>
+			<div class="gridsp">
+				<div id="Illustration" class="gsp1 tabcontent"></div>
+				<div id="Photography" class="gsp2 tabcontent"></div>
+				<div id="All" class="gsp3 tabcontent"></div>
+				<div  class="gsp4 tabcontent"></div>
+				<div  class="gsp5 tabcontent"></div>
+				<div id="Photoshop" class="gsp6 tabcontent"></div>
+				<div  class="gsp7 tabcontent"></div>
+				<div  class="gsp8 tabcontent"></div>
+				<div  class="gsp9 tabcontent"></div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-envelope"></i>
+				<p>Copyright © 2021 fuudy</p>
+			</div>
+	</footer>
+	<script>
+	function openp(evt, anphamname){
+		var i,tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i=0;i < tabcontent.length; i++){
+			tabcontent[i].style.display="none"; 
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for(i=0; i<tablinks.length; i++){
+			tablinks[i].className=tablinks[i].className.replace(" active","");
+		}
+		document.getElementById(anphamname).style.display="block";
+		evt.currentTarget.className +=" active";
+	}
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

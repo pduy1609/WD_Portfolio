@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+}
+
+@font-face{
+	font-family: font3;
+	src: url("../Fonts/SVN-Gallery Modern.otf");
+	}
+@font-face{
+	font-family: font1;
+	src: url("../Fonts/Montserrat-Bold.ttf");
+	}
+@font-face{
+	font-family: font2;
+	src: url("../Fonts/Montserrat-Regular.ttf");
+}
+body{
+	background-color: #3F4037;
+}
+
+nav h1{
+	font-family: font3;
+	color:grey;
+	font-size: 30px;
+	width:50%;
+	float:left;
+}
+nav{
+	padding:5px 50px;
+	width:100%;
+	z-index: 10;
+	position: fixed;
+	background-color:#000000ed;
+/*	display:none;*/
+}
+nav ul{
+	float:right;
+	width:30%;
+	padding-top:10px;
+	padding-left:0px
+}
+nav ul li{
+	color:grey;
+	list-style: none;
+	display: inline;
+	font-family:font2;
+	padding: 0px 10px;
+}
+.clearfix{
+	clear: both;
+}
+nav a:link{
+	text-decoration: none;
+}
+nav a:visited{
+}
+#myworks{
+	padding: 100px 50px 10px 50px;
+	text-align: center;
+	
+}
+#myworks ul a li {
+	display: inline;
+	padding: 20px;
+}
+#myworks ul{
+	padding: 20px 0;
+}
+#myworks h1 {
+	font-family:font3;
+	font-size:50px;
+}
+.tabview button{
+	border: none;
+	background-color: transparent;
+	padding: 10px 10px;
+	font-family: font1;
+}
+@keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}
+#myworks h1{animation:blink-1 5s infinite both}
+.gridsp{
+	display:grid;
+	grid-template-columns: 28% 28% 28%;
+	grid-template-rows: 350px 350px 350px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	padding: 20px 0px 20px 180px;
+	
+}
+.gsp1{
+	background-image: url("../Image/Artboard 1â.jpg");
+	background-size:cover;
+}.gsp2{
+	background-image:url("../Image/186224788_4092642997464371_4398176718115681378_n.jpg");
+	background-size:cover;
+}.gsp3{
+	background-image:url("../Image/ffff.jpg");
+	background-size:cover;
+}.gsp4{
+	background-image:url("../Image/Artboard 123.jpg");
+	background-size:cover;
+}.gsp5{
+	background-image:url("../Image/ffffffffffff.jpg");
+	background-size:cover;
+}.gsp6{
+	background-image:url("../Image/god.jpg");
+	background-size:cover;
+}.gsp7{
+	background-image:url("../Image/IMG_0525.jpg");
+	background-size:cover;
+}.gsp8{
+	background-image:url("../Image/fffggg.jpg");
+	background-size:cover;
+}.gsp9{
+	background-image:url("../Image/fge.jpg");
+	background-size:cover;
+}
+#myworks .gsp1:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}#myworks .gsp2:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}#myworks .gsp3:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}#myworks .gsp4:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}#myworks .gsp5:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}#myworks .gsp6:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}#myworks .gsp7:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}#myworks .gsp8:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}#myworks .gsp9:hover {
+	box-shadow: 1px 1px 10px 10px #5E2813;
+}
+
+
+footer i{
+	font-size: 20px;
+	padding: 5px 10px;
+	color:black;
+}
+footer p{
+	font-family: font1;
+	color:black;
+	font-size: 10px;
+
+}
+footer{
+
+	text-align: center;
+	padding: 50px
+}
